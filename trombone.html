@@ -126,7 +126,7 @@
                 audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 
                 oscillatorNode = audioCtx.createOscillator();
-                oscillatorNode.type = 'sawtooth';
+                oscillatorNode.type = 'sine';
                 oscillatorNode.frequency.value = 440;
                 oscillatorNode.detune.value = -1200;
                 oscillatorNode.start(0);
